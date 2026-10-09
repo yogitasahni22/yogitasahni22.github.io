@@ -555,7 +555,8 @@ a:focus-visible {
   }
 
   .project-visual {
-    min-height: 280px;
+    min-height: 0;
+    width: 100%;
   }
 
   .project-next {
