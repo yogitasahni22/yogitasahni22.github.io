@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of Yogita Sahni, Software Engineer II.">
+    <title>Yogita Sahni | Resume</title>
+    <style>
+      :root { --ink: #17202a; --muted: #44505c; --accent: #245d78; --line: #aeb9c1; }
+      * { box-sizing: border-box; }
+      body { color: var(--ink); font: 10.3pt/1.32 Arial, sans-serif; margin: 0; background: #e9edf0; }
+      main { background: white; margin: 24px auto; max-width: 8.5in; min-height: 11in; padding: 0.42in 0.48in; }
+      header { border-bottom: 1.5px solid var(--accent); padding-bottom: 8px; text-align: center; }
+      h1 { font-size: 21pt; letter-spacing: 1.2px; margin: 0; }
+      .headline { color: var(--accent); font-size: 11pt; font-weight: 700; margin: 2px 0 5px; }
+      .contact { color: var(--muted); font-size: 8.7pt; margin: 0; }
+      a { color: inherit; text-decoration: none; }
+      section { margin-top: 10px; }
+      h2 { border-bottom: 1px solid var(--line); color: var(--accent); font-size: 10.3pt; letter-spacing: 0.7px; margin: 0 0 5px; padding-bottom: 2px; }
+      p { margin: 0; }
+      .skills p + p { margin-top: 2px; }
+      .role { margin-top: 7px; }
+      .role:first-of-type { margin-top: 0; }
+      .role-heading { align-items: baseline; display: flex; justify-content: space-between; }
+      .role-heading strong { font-size: 10.3pt; }
+      .role-heading span { font-size: 8.8pt; font-weight: 700; white-space: nowrap; }
+      .company { color: var(--muted); font-size: 9pt; font-weight: 700; margin: 1px 0 3px; }
+      ul { margin: 2px 0 0 17px; padding: 0; }
+      li { margin: 1.5px 0; padding-left: 1px; }
+      .projects p + p { margin-top: 3px; }
+      .print-action { background: var(--accent); border: 0; color: white; cursor: pointer; font-weight: 700; padding: 9px 14px; position: fixed; right: 20px; top: 20px; }
+      @page { margin: 0; size: letter; }
+      @media print {
+        body { background: white; }
+        main { margin: 0; max-width: none; }
+        .print-action { display: none; }
+      }
+      @media (max-width: 700px) {
+        main { margin: 0; min-height: auto; padding: 24px 18px; }
+        .print-action { bottom: 12px; right: 12px; top: auto; }
+        .role-heading { align-items: flex-start; flex-direction: column; }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="print-action" type="button" onclick="window.print()">Save as PDF</button>
+    <main>
+      <header>
+        <h1>YOGITA SAHNI</h1>
+        <p class="headline">Software Engineer II | Backend, Cloud and Distributed Systems</p>
+        <p class="contact">
+          Hyderabad, India | <a href="mailto:sahniyogita27@gmail.com">sahniyogita27@gmail.com</a> |
+          <a href="https://www.linkedin.com/in/yogitasahni22/">linkedin.com/in/yogitasahni22</a> |
+          <a href="https://github.com/yogitasahni22">github.com/yogitasahni22</a>
+        </p>
+      </header>
+
+      <section>
+        <h2>PROFESSIONAL SUMMARY</h2>
+        <p>Software Engineer II with 4+ years of experience building backend services, cloud control-plane capabilities, usage-based billing systems, and automation for enterprise platforms. Strong in C#, .NET, SQL, PostgreSQL, REST APIs, distributed systems, Microsoft Azure, and production debugging. Experienced across software design, implementation, validation, code reviews, release readiness, and cross-team delivery.</p>
+      </section>
+
+      <section class="skills">
+        <h2>TECHNICAL SKILLS</h2>
+        <p><strong>Languages:</strong> C#, Python, SQL, PowerShell, JavaScript | <strong>Frameworks:</strong> .NET 6/8, .NET Core, REST APIs</p>
+        <p><strong>Backend & Cloud:</strong> Microsoft Azure, Azure Resource Manager, Azure Functions, Service Bus, Logic Apps, Service Fabric, microservices, event-driven architecture</p>
+        <p><strong>Data & Engineering:</strong> PostgreSQL, SQL Server, Kusto, Geneva, distributed systems, high availability, fault tolerance, RBAC, Git, Azure DevOps, CI/CD, unit testing</p>
+      </section>
+
+      <section>
+        <h2>PROFESSIONAL EXPERIENCE</h2>
+        <article class="role">
+          <div class="role-heading"><strong>Software Engineer II</strong><span>Sep 2026 - Present</span></div>
+          <p class="company">Microsoft - Azure Database for PostgreSQL Flexible Server | Hyderabad</p>
+          <ul>
+            <li>Designed capacity-aware subscription buildout automation that can trigger expansion workflows when a region approaches capacity constraints, reducing reliance on manual initiation.</li>
+            <li>Implemented immutable-backup subscription onboarding capabilities within reusable region-buildout workflows.</li>
+            <li>Automated billing onboarding for new compute and storage SKU additions, reducing repetitive configuration work and improving consistency across supported offerings.</li>
+            <li>Designed and implemented features that advance automated regional buildout through parameterized orchestration, validation, dependency handling, and resilient error paths.</li>
+          </ul>
+        </article>
+
+        <article class="role">
+          <div class="role-heading"><strong>Software Engineer</strong><span>Nov 2024 - Aug 2026</span></div>
+          <p class="company">Microsoft - Azure Database for PostgreSQL Flexible Server | Hyderabad</p>
+          <ul>
+            <li>Designed and implemented Snapshot Billing for per-server snapshot usage metering and accurate usage-based charging, addressing approximately $1.5M per month in identified revenue leakage.</li>
+            <li>Built scalable billing workflows using C#, .NET, SQL, and Azure services, covering usage computation, data validation, telemetry analysis, and correctness checks across multi-region workloads.</li>
+            <li>Developed backend control-plane and admin APIs for PostgreSQL server lifecycle operations, including create, scale, snapshot, restore, and delete scenarios for high-availability servers.</li>
+            <li>Engineered reusable automation and configuration templates for subscription and region onboarding, improving workflow consistency and reducing manual transitions.</li>
+            <li>Implemented support for Intel/AMD SKU families, Ultra Disk, and SSD v2 across provisioning, quota, capacity, billing, and monitoring paths.</li>
+            <li>Diagnosed distributed-system failures using Kusto, Geneva, SQL, and Service Fabric telemetry across HA, restore, CMK/Key Vault, quota, role assignment, and provisioning workflows.</li>
+          </ul>
+        </article>
+
+        <article class="role">
+          <div class="role-heading"><strong>Dynamics 365 Consultant</strong><span>Aug 2022 - Nov 2024</span></div>
+          <p class="company">Microsoft | Hyderabad</p>
+          <ul>
+            <li>Developed enterprise CRM capabilities and backend integrations using Dynamics 365, C#, .NET, Power Platform, and Azure.</li>
+            <li>Built event-driven integrations with Azure Functions, Service Bus, Logic Apps, and REST APIs for reliable communication across business systems.</li>
+            <li>Implemented Azure Data Factory migration pipelines with data validation, quality checks, and production cutover support.</li>
+          </ul>
+        </article>
+
+        <article class="role">
+          <div class="role-heading"><strong>Big Data Engineer Intern</strong><span>Feb 2022 - Jul 2022</span></div>
+          <p class="company">Cognizant | Gurgaon</p>
+          <ul><li>Built Python-based data-processing workflows and worked with Hive, Spark, MapReduce, and distributed-data concepts.</li></ul>
+        </article>
+      </section>
+
+      <section class="projects">
+        <h2>SELECTED ENGINEERING PROJECTS</h2>
+        <p><strong>PostgreSQL Snapshot Billing:</strong> Usage computation, billing validation, RBAC integration, telemetry analysis, and revenue-protection logic for snapshot consumption.</p>
+        <p><strong>Automated Regional Buildout:</strong> Capacity-aware design, reusable subscription onboarding, immutable-backup enablement, validation, and orchestration for consistent Azure service expansion.</p>
+        <p><strong>Backend Control-Plane APIs:</strong> Secure lifecycle operations and state-management workflows for Azure Database for PostgreSQL Flexible Server.</p>
+      </section>
+
+      <section>
+        <h2>EDUCATION & CERTIFICATIONS</h2>
+        <p><strong>B.Tech, Information Technology</strong> - Guru Nanak Dev Engineering College | GPA: 9.07</p>
+        <p>Microsoft Certified: Azure AI Fundamentals | Dynamics 365 Fundamentals | Azure Fundamentals (AZ-900)</p>
+        <p>Microsoft Global Hackathon 2023 - Award Winner | Infosys Software Programmer Certification</p>
+      </section>
+    </main>
+  </body>
+</html>
