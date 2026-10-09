@@ -32,7 +32,20 @@
       @page { margin: 0; size: letter; }
       @media print {
         body { background: white; }
-        main { margin: 0; max-width: none; }
+        body { font-size: 9.1pt; line-height: 1.22; }
+        main { margin: 0; max-width: none; min-height: 0; padding: 0.3in 0.4in; }
+        header { padding-bottom: 5px; }
+        h1 { font-size: 19pt; }
+        .headline { font-size: 10pt; margin-bottom: 3px; }
+        .contact { font-size: 7.8pt; }
+        section { margin-top: 6px; }
+        h2 { margin-bottom: 3px; }
+        .role { margin-top: 4px; }
+        .role-heading strong { font-size: 9.5pt; }
+        .company { margin-bottom: 1px; }
+        ul { margin-top: 1px; }
+        li { margin: 0; }
+        .projects p + p { margin-top: 1px; }
         .print-action { display: none; }
       }
       @media (max-width: 700px) {
